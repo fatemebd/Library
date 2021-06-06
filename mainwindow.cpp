@@ -13,3 +13,10 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
+void MainWindow::on_signup_clicked()
+{
+       signup * s=new signup();
+       this->close();
+       s->show();
+}

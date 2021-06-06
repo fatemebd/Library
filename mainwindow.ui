@@ -173,7 +173,7 @@ border-radius : 10px;
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>10</height>
+             <height>20</height>
             </size>
            </property>
           </spacer>
@@ -190,6 +190,9 @@ border-radius : 10px;
                <width>50</width>
                <height>16777215</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgba(255, 205, 88,0.3);</string>
              </property>
              <property name="text">
               <string>UserName</string>
@@ -214,12 +217,24 @@ border-radius : 10px;
            </item>
            <item>
             <widget class="QLineEdit" name="lineEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>20</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string>Write UserName</string>
              </property>
              <property name="styleSheet">
               <string notr="true">background-color: white;
-border-radius : 20px;</string>
+border-radius : 10px;</string>
              </property>
             </widget>
            </item>
@@ -255,7 +270,7 @@ border-radius : 20px;</string>
               </size>
              </property>
              <property name="styleSheet">
-              <string notr="true">font: 75 8pt &quot;2  Badr&quot;;</string>
+              <string notr="true">background-color: rgba(255, 205, 88,0.3);</string>
              </property>
              <property name="text">
               <string>PassWord</string>
@@ -280,6 +295,18 @@ border-radius : 20px;</string>
            </item>
            <item>
             <widget class="QLineEdit" name="lineEdit_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>20</height>
+              </size>
+             </property>
              <property name="toolTip">
               <string>Write Password</string>
              </property>
@@ -288,7 +315,10 @@ border-radius : 20px;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">background-color: white;
-border-radius : 20px;</string>
+border-radius : 10px;</string>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
              </property>
             </widget>
            </item>
@@ -311,56 +341,195 @@ border-radius : 20px;</string>
           </spacer>
          </item>
          <item>
-          <widget class="QWidget" name="widget" native="true">
-           <property name="styleSheet">
-            <string notr="true">QPushButton
-{
-background-color:rgb(255, 58, 19);
-border-radius : 10px;
-}
-QPushButton:hover
-{
-background-color: rgb(249, 255, 198);
-}
-</string>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="topMargin">
+            <number>0</number>
            </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
-            <property name="topMargin">
-             <number>1</number>
-            </property>
-            <item>
-             <widget class="QPushButton" name="pushButton_3">
-              <property name="maximumSize">
-               <size>
-                <width>50</width>
-                <height>200</height>
-               </size>
-              </property>
-              <property name="cursor">
-               <cursorShape>PointingHandCursor</cursorShape>
-              </property>
-              <property name="toolTip">
-               <string>Press</string>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">
+           <item>
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="login">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>30</horstretch>
+               <verstretch>70</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
 QPushButton
 {
 background-color:rgb(255, 58, 19);
 border-radius : 10px;
 }
 QPushButton:hover{
-background-color: rgb(249, 255, 198);
+background-color:  rgb(139, 193, 14);
 }
 </string>
-              </property>
-              <property name="text">
-               <string>Login</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+             </property>
+             <property name="text">
+              <string>Sign in</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>25</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>130</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: rgba(255, 205, 88,0.3);
+
+	font: 75 10pt &quot;B Nazanin&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Don't have an Account?        </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="signup">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Maximum" vsizetype="Fixed">
+               <horstretch>50</horstretch>
+               <verstretch>30</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">
+QPushButton
+{
+background-color:rgb(255, 58, 19);
+border-radius : 10px;
+	font: 75 8pt &quot;B Nazanin&quot;;
+}
+QPushButton:hover{
+background-color:  rgb(139, 193, 14);
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Create Now!</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
          </item>
          <item>
           <spacer name="verticalSpacer_3">
@@ -481,8 +650,8 @@ background-color: rgb(249, 255, 198);
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>762</x>
-     <y>43</y>
+     <x>789</x>
+     <y>84</y>
     </hint>
     <hint type="destinationlabel">
      <x>771</x>
@@ -497,8 +666,8 @@ background-color: rgb(249, 255, 198);
    <slot>repaint()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>745</x>
-     <y>43</y>
+     <x>749</x>
+     <y>84</y>
     </hint>
     <hint type="destinationlabel">
      <x>737</x>
