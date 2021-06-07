@@ -12,3 +12,12 @@ signup::~signup()
 {
     delete ui;
 }
+
+
+
+void signup::on_back_clicked()
+{
+    MainWindow *s=new MainWindow;
+    this->close();
+    s->show();
+}

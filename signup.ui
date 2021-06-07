@@ -46,6 +46,26 @@ background-color: rgb(249, 255, 198);
       <number>0</number>
      </property>
      <item>
+      <widget class="QPushButton" name="back">
+       <property name="minimumSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="rec.qrc">
+         <normaloff>:/images/images/return.png</normaloff>:/images/images/return.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
       <spacer name="horizontalSpacer">
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
@@ -642,7 +662,7 @@ background-color: rgba(255, 205, 88,0.3);
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>501</x>
+     <x>525</x>
      <y>30</y>
     </hint>
     <hint type="destinationlabel">

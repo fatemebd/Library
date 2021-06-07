@@ -19,3 +19,10 @@ void forgetpass::on_create_clicked()
     this->close();
     s->show();
 }
+
+void forgetpass::on_back_clicked()
+{
+    MainWindow *s=new MainWindow;
+    this->close();
+    s->show();
+}

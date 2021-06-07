@@ -600,6 +600,9 @@ background-color:  rgb(139, 193, 14);
                <height>16777215</height>
               </size>
              </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
              <property name="styleSheet">
               <string notr="true">
 QPushButton
@@ -719,6 +722,16 @@ background-color: rgb(0, 255, 255);
     <bool>false</bool>
    </attribute>
   </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>613</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
  </widget>
  <resources>
   <include location="rec.qrc"/>
@@ -731,11 +744,11 @@ background-color: rgb(0, 255, 255);
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>789</x>
-     <y>84</y>
+     <x>602</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>771</x>
+     <x>612</x>
      <y>105</y>
     </hint>
    </hints>
@@ -747,11 +760,11 @@ background-color: rgb(0, 255, 255);
    <slot>repaint()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>749</x>
-     <y>84</y>
+     <x>562</x>
+     <y>64</y>
     </hint>
     <hint type="destinationlabel">
-     <x>737</x>
+     <x>612</x>
      <y>110</y>
     </hint>
    </hints>

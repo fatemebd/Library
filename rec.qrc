@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/images">
         <file>images/first-what-is-android-programming-library-barnamechi.jpg</file>
+        <file>images/return.png</file>
     </qresource>
     <qresource prefix="/icones">
         <file>images/delete-sign.png</file>
