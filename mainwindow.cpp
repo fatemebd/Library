@@ -20,3 +20,10 @@ void MainWindow::on_signup_clicked()
        this->close();
        s->show();
 }
+
+void MainWindow::on_forgetpass_clicked()
+{
+    forgetpass * s=new forgetpass;
+    this->close();
+    s->show();
+}
