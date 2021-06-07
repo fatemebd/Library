@@ -2,7 +2,7 @@
 #include "ui_forgetpass.h"
 
 forgetpass::forgetpass(QWidget *parent) :
-    QWidget(parent),
+    QMainWindow(parent),
     ui(new Ui::forgetpass)
 {
     ui->setupUi(this);
@@ -13,16 +13,16 @@ forgetpass::~forgetpass()
     delete ui;
 }
 
-void forgetpass::on_create_clicked()
+void forgetpass::on_back_clicked()
 {
-    signup *s=new signup();
+    MainWindow * s=new MainWindow();
     this->close();
     s->show();
 }
 
-void forgetpass::on_back_clicked()
+void forgetpass::on_create_clicked()
 {
-    MainWindow *s=new MainWindow;
+    signupform *s =new signupform();
     this->close();
     s->show();
 }

@@ -1,14 +1,14 @@
 #ifndef FORGETPASS_H
 #define FORGETPASS_H
-
-#include <QWidget>
+#include <signupform.h>
+#include <QMainWindow>
 #include <mainwindow.h>
-#include <signup.h>
+
 namespace Ui {
 class forgetpass;
 }
 
-class forgetpass : public QWidget
+class forgetpass : public QMainWindow
 {
     Q_OBJECT
 
@@ -17,11 +17,9 @@ public:
     ~forgetpass();
 
 private slots:
-
+    void on_back_clicked();
 
     void on_create_clicked();
-
-    void on_back_clicked();
 
 private:
     Ui::forgetpass *ui;

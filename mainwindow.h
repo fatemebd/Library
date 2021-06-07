@@ -1,6 +1,6 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-#include <signup.h>
+#include <signupform.h>
 #include <QMainWindow>
 #include<forgetpass.h>
 QT_BEGIN_NAMESPACE

@@ -12,17 +12,17 @@ SOURCES += \
     forgetpass.cpp \
     main.cpp \
     mainwindow.cpp \
-    signup.cpp
+    signupform.cpp
 
 HEADERS += \
     forgetpass.h \
     mainwindow.h \
-    signup.h
+    signupform.h
 
 FORMS += \
     forgetpass.ui \
     mainwindow.ui \
-    signup.ui
+    signupform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
