@@ -25,6 +25,20 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">#signup
+{
+border-image : url(:/images/images/first-what-is-android-programming-library-barnamechi.jpg);
+}
+QPushButton
+{
+background-color:rgb(255, 58, 19);
+border-radius : 10px;
+}
+QPushButton:hover{
+background-color: rgb(249, 255, 198);
+}</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout">
@@ -80,6 +94,16 @@
        <property name="text">
         <string/>
        </property>
+       <property name="icon">
+        <iconset resource="rec.qrc">
+         <normaloff>:/icones/images/delete-sign.png</normaloff>:/icones/images/delete-sign.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
       </widget>
      </item>
     </layout>
@@ -133,7 +157,12 @@
         </size>
        </property>
        <property name="styleSheet">
-        <string notr="true">
+        <string notr="true">QWidget{
+color:rgb(0, 0, 127);
+background-color: rgba(255, 205, 88,0.8);
+border-radius : 10px;
+
+}
 QLineEdit
 {
 background-color: white;
@@ -148,8 +177,11 @@ border-radius : 10px;
 QPushButton:hover{
 background-color:  rgb(139, 193, 14);
 }
+QLabel
+{
+background-color: rgba(255, 205, 88,0.3);
+}
 
-background-color:rgb(255, 20, 102);
 </string>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -389,7 +421,8 @@ background-color:rgb(255, 20, 102);
           <item>
            <widget class="QLabel" name="label_3">
             <property name="styleSheet">
-             <string notr="true">color: black</string>
+             <string notr="true">color: black;
+</string>
             </property>
             <property name="text">
              <string>Password</string>
@@ -598,7 +631,9 @@ background-color:rgb(255, 20, 102);
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pushButton</sender>
