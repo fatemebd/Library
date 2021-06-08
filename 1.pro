@@ -17,7 +17,8 @@ SOURCES += \
 HEADERS += \
     forgetpass.h \
     mainwindow.h \
-    signupform.h
+    signupform.h \
+    users.h
 
 FORMS += \
     forgetpass.ui \

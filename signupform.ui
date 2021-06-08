@@ -165,14 +165,7 @@ background-color: white;
 border-radius : 10px;
 }
 
-QPushButton
-{
-background-color:rgb(255, 58, 19);
-border-radius : 10px;
-}
-QPushButton:hover{
-background-color:  rgb(139, 193, 14);
-}
+
 QLabel
 {
 background-color: rgba(255, 205, 88,0.3);
@@ -226,7 +219,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit">
+            <widget class="QLineEdit" name="first">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -279,7 +272,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_4">
+            <widget class="QLineEdit" name="last">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -332,7 +325,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_5">
+            <widget class="QLineEdit" name="email">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -385,7 +378,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="user">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -439,7 +432,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_3">
+            <widget class="QLineEdit" name="pass">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -505,7 +498,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_6">
+            <widget class="QLineEdit" name="confirm">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -548,7 +541,7 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QPushButton" name="pushButton_3">
+            <widget class="QPushButton" name="signup">
              <property name="minimumSize">
               <size>
                <width>100</width>
@@ -557,6 +550,16 @@ background-color: rgba(255, 205, 88,0.3);
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton
+{
+background-color:rgb(255, 58, 19);
+border-radius : 10px;
+}
+QPushButton:hover{
+background-color:  rgb(139, 193, 14);
+}</string>
              </property>
              <property name="text">
               <string>sign up</string>

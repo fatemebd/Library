@@ -18,6 +18,9 @@ public:
 private slots:
     void on_back_clicked();
 
+
+    void on_signup_clicked();
+
 private:
     Ui::signupform *ui;
 };
