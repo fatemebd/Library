@@ -10,6 +10,6 @@ public:
    QString username;
    QString password;
    QString keyword;
-
+   QString role;
 };
 #endif // USERS_H

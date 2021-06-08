@@ -240,7 +240,7 @@ border-radius : 10px;
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit">
+            <widget class="QLineEdit" name="username_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -318,7 +318,7 @@ border-radius : 10px;</string>
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="password_2">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                <horstretch>0</horstretch>

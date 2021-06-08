@@ -22,6 +22,8 @@ private slots:
 
     void on_forgetpass_clicked();
 
+    void on_login_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

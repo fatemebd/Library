@@ -6,8 +6,6 @@
 #include <QList>
 #include<QDebug>
 #include <QMessageBox>
-#include<iostream>
-using namespace std;
 signupform::signupform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::signupform)
@@ -70,8 +68,7 @@ void signupform::on_signup_clicked()
     else if(confirm==true && exist == true){
         file.open(QFile::Append|QFile::WriteOnly);
         QTextStream q(&file);
-        q<<endl<<this->ui->first->text()<<"-"<<this->ui->last->text()<<"-"<<this->ui->user->text()<<"-"<<this->ui->pass->text()<<"\r\n";
-       // q<<  endl<<s;
+        q<<endl<<this->ui->first->text()<<"-"<<this->ui->last->text()<<"-"<<this->ui->user->text()<<"-"<<this->ui->pass->text()<<this->ui->keyword->text()<<this->ui->role->currentText()<<"\r\n";
         file.close();
         MainWindow * b=new MainWindow();
         this->close();

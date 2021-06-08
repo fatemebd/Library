@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>603</width>
-    <height>393</height>
+    <width>651</width>
+    <height>568</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -118,6 +118,19 @@ background-color: rgb(249, 255, 198);
      </layout>
     </item>
     <item>
+     <spacer name="verticalSpacer_13">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <property name="topMargin">
        <number>0</number>
@@ -148,8 +161,14 @@ background-color: rgb(249, 255, 198);
         </property>
         <property name="minimumSize">
          <size>
-          <width>150</width>
-          <height>200</height>
+          <width>200</width>
+          <height>300</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>1000</height>
          </size>
         </property>
         <property name="styleSheet">
@@ -195,6 +214,19 @@ background-color: rgba(255, 205, 88,0.3);
            <property name="topMargin">
             <number>0</number>
            </property>
+           <item>
+            <spacer name="horizontalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item>
             <widget class="QLabel" name="label">
              <property name="styleSheet">
@@ -249,6 +281,19 @@ background-color: rgba(255, 205, 88,0.3);
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="label_4">
              <property name="styleSheet">
               <string notr="true">color: black</string>
@@ -301,6 +346,19 @@ background-color: rgba(255, 205, 88,0.3);
            <property name="topMargin">
             <number>0</number>
            </property>
+           <item>
+            <spacer name="horizontalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item>
             <widget class="QLabel" name="label_5">
              <property name="styleSheet">
@@ -355,6 +413,19 @@ background-color: rgba(255, 205, 88,0.3);
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="label_2">
              <property name="styleSheet">
               <string notr="true">color:black</string>
@@ -407,6 +478,19 @@ background-color: rgba(255, 205, 88,0.3);
            <property name="topMargin">
             <number>0</number>
            </property>
+           <item>
+            <spacer name="horizontalSpacer_17">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
            <item>
             <widget class="QLabel" name="label_3">
              <property name="styleSheet">
@@ -462,6 +546,19 @@ background-color: rgba(255, 205, 88,0.3);
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_18">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <layout class="QVBoxLayout" name="verticalLayout_4">
              <property name="topMargin">
               <number>0</number>
@@ -511,6 +608,202 @@ background-color: rgba(255, 205, 88,0.3);
          </item>
          <item>
           <spacer name="verticalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_11">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">color:black;
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+             </property>
+             <property name="text">
+              <string>Choose one Question.(remember you can change your password by this answer)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_19">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <property name="minimumSize">
+              <size>
+               <width>100</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: white;</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Choose Question</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What is the name of your pet?</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What was name of toyr first teacher?</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What is your favorite team?</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What is yor favorite sport?</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What is your favorite book?</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>What is your favorite car?</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_12">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="keyword">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_12">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QComboBox" name="role">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:white;</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>Choose your role</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Admin</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Member</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_21">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_12">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
@@ -623,7 +916,7 @@ background-color:  rgb(139, 193, 14);
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>4</height>
+        <height>8</height>
        </size>
       </property>
      </spacer>
@@ -636,7 +929,7 @@ background-color:  rgb(139, 193, 14);
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>5</height>
+        <height>7</height>
        </size>
       </property>
      </spacer>
@@ -647,5 +940,22 @@ background-color:  rgb(139, 193, 14);
  <resources>
   <include location="rec.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>signupform</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>578</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>600</x>
+     <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
