@@ -12,17 +12,20 @@ SOURCES += \
     forgetpass.cpp \
     main.cpp \
     mainwindow.cpp \
+    memberform.cpp \
     signupform.cpp
 
 HEADERS += \
     forgetpass.h \
     mainwindow.h \
+    memberform.h \
     signupform.h \
     users.h
 
 FORMS += \
     forgetpass.ui \
     mainwindow.ui \
+    memberform.ui \
     signupform.ui
 
 # Default rules for deployment.

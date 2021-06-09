@@ -38,9 +38,11 @@ void MainWindow::on_login_clicked()
     QList <user> A;
     bool contain=false;
     int index;
+    QString str=this->ui->usernamee->text();
+    QString strpass=this->ui->passwordd->text();
     QFile file("C:/Users/DANESH/Desktop/ap/1/files/usersinfo.txt");
      QTextStream a(&file);
-      file.open(QFile::Append|QFile::ReadOnly);
+      file.open(QFile::Text|QFile::ReadOnly);
      while(!a.atEnd())
      {
          QStringList s=a.readLine().split('-');
@@ -55,17 +57,24 @@ void MainWindow::on_login_clicked()
      file.close();
      for(int i=0;i<A.size();i++){
          user tmp=A[i];
-         if(tmp.username==this->ui->username->text()){
+
+         if(tmp.username==str){
              index=i;
-             if(tmp.password==this->ui->password->text())
-                 contain=true;
+             contain=true;
+             if(tmp.password==strpass){
+                 forgetpass* s=new forgetpass;
+                 this->close();
+                 s->show();
+             }
              else{
                  QMessageBox::critical(this,"Password Error","The password is not correct!");
              }
              break;
          }
-         else{
-             QMessageBox::critical(this,"Username Error","The username is not available!");
-         }
+
      }
+    if(contain!=true){
+             QMessageBox::critical(this,"Username Error","The username is not available!");
+     }
+
 }

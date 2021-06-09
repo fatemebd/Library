@@ -45,6 +45,9 @@ background-color: rgb(249, 255, 198);
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string>back</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -99,6 +102,9 @@ background-color: rgb(249, 255, 198);
         </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>close</string>
         </property>
         <property name="text">
          <string/>
@@ -188,8 +194,8 @@ border-radius : 10px;
 QLabel
 {
 background-color: rgba(255, 205, 88,0.3);
+color:rgb(0, 0, 107);
 }
-
 </string>
         </property>
         <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -230,7 +236,7 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label">
              <property name="styleSheet">
-              <string notr="true">color:black</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Firs Name</string>
@@ -257,6 +263,9 @@ background-color: rgba(255, 205, 88,0.3);
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter your first name</string>
              </property>
             </widget>
            </item>
@@ -296,7 +305,7 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label_4">
              <property name="styleSheet">
-              <string notr="true">color: black</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Last Name</string>
@@ -323,6 +332,9 @@ background-color: rgba(255, 205, 88,0.3);
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter your last name</string>
              </property>
             </widget>
            </item>
@@ -362,7 +374,7 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label_5">
              <property name="styleSheet">
-              <string notr="true">color:black</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>E-mail</string>
@@ -389,6 +401,9 @@ background-color: rgba(255, 205, 88,0.3);
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter your email</string>
              </property>
             </widget>
            </item>
@@ -428,7 +443,7 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label_2">
              <property name="styleSheet">
-              <string notr="true">color:black</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>UserName</string>
@@ -455,6 +470,9 @@ background-color: rgba(255, 205, 88,0.3);
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter username</string>
              </property>
             </widget>
            </item>
@@ -494,7 +512,7 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label_3">
              <property name="styleSheet">
-              <string notr="true">color: black;
+              <string notr="true">
 </string>
              </property>
              <property name="text">
@@ -522,6 +540,9 @@ background-color: rgba(255, 205, 88,0.3);
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter password</string>
              </property>
             </widget>
            </item>
@@ -572,7 +593,7 @@ background-color: rgba(255, 205, 88,0.3);
              <item>
               <widget class="QLabel" name="label_6">
                <property name="styleSheet">
-                <string notr="true">color:black</string>
+                <string notr="true"/>
                </property>
                <property name="text">
                 <string>Confirm Password</string>
@@ -602,6 +623,9 @@ background-color: rgba(255, 205, 88,0.3);
                <height>20</height>
               </size>
              </property>
+             <property name="toolTip">
+              <string>re-enter your password</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -627,8 +651,12 @@ background-color: rgba(255, 205, 88,0.3);
            <item>
             <widget class="QLabel" name="label_7">
              <property name="styleSheet">
-              <string notr="true">color:black;
-font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
+              <string notr="true">
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgba(255, 205, 88,0.3);
+color:rgb(0, 0, 107);
+
+</string>
              </property>
              <property name="text">
               <string>Choose one Question.(remember you can change your password by this answer)</string>
@@ -724,6 +752,9 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
                <height>20</height>
               </size>
              </property>
+             <property name="toolTip">
+              <string>enter your keyword</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -766,6 +797,9 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
                <width>200</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>choose tour role</string>
              </property>
              <property name="styleSheet">
               <string notr="true">background-color:white;</string>
@@ -843,6 +877,9 @@ font: 75 9pt &quot;MS Shell Dlg 2&quot;;</string>
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>sign up</string>
              </property>
              <property name="styleSheet">
               <string notr="true">QPushButton

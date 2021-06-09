@@ -45,6 +45,9 @@ background-color: rgb(249, 255, 198);
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
         </property>
+        <property name="toolTip">
+         <string>back</string>
+        </property>
         <property name="text">
          <string/>
         </property>
@@ -93,6 +96,9 @@ background-color: rgb(249, 255, 198);
         </property>
         <property name="cursor">
          <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="toolTip">
+         <string>close</string>
         </property>
         <property name="text">
          <string/>
@@ -168,6 +174,7 @@ background-color:  rgb(139, 193, 14);
 QLabel
 {
 background-color: rgba(255, 205, 88,0.3);
+color:rgb(0, 0, 107);
 }
 </string>
         </property>
@@ -186,25 +193,38 @@ background-color: rgba(255, 205, 88,0.3);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>10</height>
+             <height>20</height>
             </size>
            </property>
           </spacer>
          </item>
          <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
            <property name="topMargin">
             <number>0</number>
            </property>
            <item>
-            <widget class="QLabel" name="label">
+            <spacer name="horizontalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5">
              <property name="text">
-              <string>Enter your KeyWord</string>
+              <string>UserName</string>
              </property>
             </widget>
            </item>
            <item>
-            <spacer name="horizontalSpacer_2">
+            <spacer name="horizontalSpacer_12">
              <property name="orientation">
               <enum>Qt::Horizontal</enum>
              </property>
@@ -224,11 +244,77 @@ background-color: rgba(255, 205, 88,0.3);
                <height>20</height>
               </size>
              </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Your KeyWord</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="keyword">
+             <property name="minimumSize">
+              <size>
+               <width>300</width>
+               <height>20</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter your tooltip</string>
              </property>
             </widget>
            </item>
@@ -253,6 +339,19 @@ background-color: rgba(255, 205, 88,0.3);
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="label_2">
              <property name="text">
               <string>New PassWord</string>
@@ -273,12 +372,15 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="newpass">
              <property name="minimumSize">
               <size>
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>enter your password</string>
              </property>
             </widget>
            </item>
@@ -303,6 +405,19 @@ background-color: rgba(255, 205, 88,0.3);
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="label_3">
              <property name="text">
               <string>Confirm New PassWord</string>
@@ -323,12 +438,15 @@ background-color: rgba(255, 205, 88,0.3);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit_3">
+            <widget class="QLineEdit" name="newpassconf">
              <property name="minimumSize">
               <size>
                <width>300</width>
                <height>20</height>
               </size>
+             </property>
+             <property name="toolTip">
+              <string>re-enter your password</string>
              </property>
             </widget>
            </item>
@@ -375,6 +493,9 @@ background-color: rgba(255, 205, 88,0.3);
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>change password</string>
              </property>
              <property name="text">
               <string>Change PassWord</string>
@@ -457,6 +578,9 @@ background-color: rgba(255, 205, 88,0.3);
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>create new account</string>
              </property>
              <property name="text">
               <string>Create New Account with new e-mail</string>

@@ -208,6 +208,19 @@ border-radius : 10px;
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_13">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="username">
              <property name="maximumSize">
               <size>
@@ -240,7 +253,7 @@ border-radius : 10px;
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="username_2">
+            <widget class="QLineEdit" name="usernamee">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -286,6 +299,19 @@ border-radius : 10px;</string>
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_14">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QLabel" name="password">
              <property name="maximumSize">
               <size>
@@ -318,7 +344,7 @@ border-radius : 10px;</string>
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="password_2">
+            <widget class="QLineEdit" name="passwordd">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                <horstretch>0</horstretch>
@@ -398,6 +424,9 @@ border-radius : 10px;</string>
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>sign in</string>
              </property>
              <property name="styleSheet">
               <string notr="true">
@@ -521,6 +550,9 @@ background-color:  rgb(139, 193, 14);
              </property>
              <property name="cursor">
               <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>create an account</string>
              </property>
              <property name="styleSheet">
               <string notr="true">
