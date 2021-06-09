@@ -21,6 +21,8 @@ private slots:
 
     void on_create_clicked();
 
+    void on_change_clicked();
+
 private:
     Ui::forgetpass *ui;
 };

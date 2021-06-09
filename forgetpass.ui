@@ -237,7 +237,7 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="lineEdit">
+            <widget class="QLineEdit" name="userr">
              <property name="minimumSize">
               <size>
                <width>300</width>
@@ -652,5 +652,22 @@ color:rgb(0, 0, 107);
  <resources>
   <include location="rec.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>forgetpass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>26</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
