@@ -512,8 +512,7 @@ color:rgb(0, 0, 107);
            <item>
             <widget class="QLabel" name="label_3">
              <property name="styleSheet">
-              <string notr="true">
-</string>
+              <string notr="true"/>
              </property>
              <property name="text">
               <string>Password</string>
@@ -702,11 +701,6 @@ color:rgb(0, 0, 107);
              <item>
               <property name="text">
                <string>What is the name of your pet?</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>What was name of toyr first teacher?</string>
               </property>
              </item>
              <item>
