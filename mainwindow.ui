@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>613</width>
-    <height>500</height>
+    <width>651</width>
+    <height>568</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -733,7 +733,7 @@ background-color: rgb(0, 255, 255);
    <hints>
     <hint type="sourcelabel">
      <x>602</x>
-     <y>64</y>
+     <y>47</y>
     </hint>
     <hint type="destinationlabel">
      <x>612</x>
@@ -749,7 +749,7 @@ background-color: rgb(0, 255, 255);
    <hints>
     <hint type="sourcelabel">
      <x>562</x>
-     <y>64</y>
+     <y>47</y>
     </hint>
     <hint type="destinationlabel">
      <x>612</x>

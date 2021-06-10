@@ -2,6 +2,10 @@
     <qresource prefix="/images">
         <file>images/first-what-is-android-programming-library-barnamechi.jpg</file>
         <file>images/return.png</file>
+        <file>images/books-glasses-table-library.jpg</file>
+        <file>images/Library-Wallpaper-19-2560x1600-1.jpg</file>
+        <file>images/471300_orig.jpg</file>
+        <file>images/2995229_orig.jpg</file>
     </qresource>
     <qresource prefix="/icones">
         <file>images/delete-sign.png</file>

@@ -1,6 +1,6 @@
 #ifndef MEMBERFORM_H
 #define MEMBERFORM_H
-
+#include <mainwindow.h>
 #include <QMainWindow>
 
 namespace Ui {

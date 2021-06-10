@@ -48,6 +48,7 @@ void signupform::on_signup_clicked()
          tmp.username=s[2];
          tmp.password=s[3];
          tmp.keyword=s[4];
+         tmp.role=s[5];
          A.append(tmp);
      }
      file.close();

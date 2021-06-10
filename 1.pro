@@ -9,6 +9,7 @@ CONFIG += c++11
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    adminform.cpp \
     forgetpass.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -16,6 +17,7 @@ SOURCES += \
     signupform.cpp
 
 HEADERS += \
+    adminform.h \
     forgetpass.h \
     mainwindow.h \
     memberform.h \
@@ -23,6 +25,7 @@ HEADERS += \
     users.h
 
 FORMS += \
+    adminform.ui \
     forgetpass.ui \
     mainwindow.ui \
     memberform.ui \

@@ -52,6 +52,7 @@ void MainWindow::on_login_clicked()
          tmp.username=s[2];
          tmp.password=s[3];
          tmp.keyword=s[4];
+         tmp.role=s[5];
          A.append(tmp);
      }
      file.close();
@@ -62,9 +63,16 @@ void MainWindow::on_login_clicked()
              index=i;
              contain=true;
              if(tmp.password==strpass){
-                 forgetpass* s=new forgetpass;
-                 this->close();
-                 s->show();
+                 if(tmp.role=="Admin"){
+                     adminform * s=new adminform;
+                     this->close();
+                     s->show();
+                 }
+                 else{
+                     memberform * s= new memberform;
+                     this->close();
+                     s->show();
+                 }
              }
              else{
                  QMessageBox::critical(this,"Password Error","The password is not correct!");

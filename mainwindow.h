@@ -2,7 +2,9 @@
 #define MAINWINDOW_H
 #include <signupform.h>
 #include <QMainWindow>
-#include<forgetpass.h>
+#include <forgetpass.h>
+#include <adminform.h>
+#include <memberform.h>
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
