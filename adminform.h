@@ -2,7 +2,8 @@
 #define ADMINFORM_H
 #include <mainwindow.h>
 #include <QMainWindow>
-
+#include <addform.h>
+#include <deleteform.h>
 namespace Ui {
 class adminform;
 }
@@ -19,6 +20,10 @@ private slots:
     void on_back_clicked();
 
     void on_edit_clicked();
+
+    void on_add_clicked();
+
+    void on_delete_2_clicked();
 
 private:
     Ui::adminform *ui;

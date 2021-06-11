@@ -1,6 +1,6 @@
 #ifndef DELETEFORM_H
 #define DELETEFORM_H
-
+#include <adminform.h>
 #include <QMainWindow>
 
 namespace Ui {
@@ -14,6 +14,11 @@ class deleteform : public QMainWindow
 public:
     explicit deleteform(QWidget *parent = nullptr);
     ~deleteform();
+
+private slots:
+    void on_back_clicked();
+
+    void on_deletepush_clicked();
 
 private:
     Ui::deleteform *ui;

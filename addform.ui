@@ -6,12 +6,32 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>698</width>
-    <height>326</height>
+    <width>651</width>
+    <height>568</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>651</width>
+    <height>568</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#addform
+{
+border-image :  url(:/images/images/2995229_orig.jpg)
+}
+QPushButton
+{
+background-color:rgb(255, 58, 19);
+border-radius : 10px;
+}
+QPushButton:hover{
+background-color: rgb(249, 255, 198);
+}</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -21,9 +41,15 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="back">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -42,15 +68,27 @@
       </item>
       <item>
        <widget class="QPushButton" name="pushButton_2">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string/>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="close">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
         <property name="text">
-         <string>PushButton</string>
+         <string/>
         </property>
        </widget>
       </item>
@@ -64,7 +102,7 @@
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>34</height>
+        <height>147</height>
        </size>
       </property>
      </spacer>
@@ -72,10 +110,10 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="topMargin">
-       <number>20</number>
+       <number>0</number>
       </property>
       <property name="bottomMargin">
-       <number>20</number>
+       <number>0</number>
       </property>
       <item>
        <spacer name="horizontalSpacer_5">
@@ -115,7 +153,7 @@ background-color:  rgb(139, 193, 14);
 }
 QLabel
 {
-background-color: rgba(255, 205, 88,0.3);
+background-color: rgba(255, 205, 88,0);
 color:rgb(0, 0, 107);
 }
 </string>
@@ -138,7 +176,7 @@ color:rgb(0, 0, 107);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>10</height>
+             <height>20</height>
             </size>
            </property>
           </spacer>
@@ -201,7 +239,7 @@ color:rgb(0, 0, 107);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>10</height>
+             <height>15</height>
             </size>
            </property>
           </spacer>
@@ -264,7 +302,7 @@ color:rgb(0, 0, 107);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>10</height>
+             <height>15</height>
             </size>
            </property>
           </spacer>
@@ -378,6 +416,19 @@ color:rgb(0, 0, 107);
            </item>
           </layout>
          </item>
+         <item>
+          <spacer name="verticalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
         </layout>
        </widget>
       </item>
@@ -404,7 +455,7 @@ color:rgb(0, 0, 107);
       <property name="sizeHint" stdset="0">
        <size>
         <width>20</width>
-        <height>34</height>
+        <height>146</height>
        </size>
       </property>
      </spacer>

@@ -26,3 +26,17 @@ void adminform::on_edit_clicked()
     this->close();
     s->show();
 }
+
+void adminform::on_add_clicked()
+{
+    addform *s =new addform;
+    this->close();
+    s->show();
+}
+
+void adminform::on_delete_2_clicked()
+{
+    deleteform *s=new deleteform;
+    this->close();
+    s->show();
+}

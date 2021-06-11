@@ -71,6 +71,7 @@ void signupform::on_signup_clicked()
         QTextStream q(&file);
         q<<endl<<this->ui->first->text()<<"-"<<this->ui->last->text()<<"-"<<this->ui->user->text()<<"-"<<this->ui->pass->text()<<"-"<<this->ui->keyword->text()<<"-"<<this->ui->role->currentText()<<"\r\n";
         file.close();
+        QMessageBox :: information(this,"","You signed up succesfully!");
         MainWindow * b=new MainWindow();
         this->close();
         b->show();

@@ -85,7 +85,8 @@ void editform::on_save_clicked()
               }
              if(press!=true)
                  QMessageBox :: critical(this,"Foundation Faild","This book is not available!");
-
+             else if(press==true)
+                 QMessageBox :: information(this,"","Your changes saved succesfully!");
          }
          file.open(QFile::Text|QFile::WriteOnly);
          for(int i=0;i<A.size();i++){
