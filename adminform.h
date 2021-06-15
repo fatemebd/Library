@@ -15,7 +15,6 @@ class adminform : public QMainWindow
 public:
     explicit adminform(QWidget *parent = nullptr);
     ~adminform();
-
 private slots:
     void on_back_clicked();
 
@@ -24,6 +23,8 @@ private slots:
     void on_add_clicked();
 
     void on_delete_2_clicked();
+
+    void on_showall_clicked();
 
 private:
     Ui::adminform *ui;

@@ -24,7 +24,7 @@ void addform::on_add_clicked()
     QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
     file.open(QFile::Append|QFile::WriteOnly);
     QTextStream q(&file);
-    q<<this->ui->addname->text()<<"-"<<this->ui->addauthor->text()<<"-"<<this->ui->addpublisher->text()<<"\r\n";
+    q<<this->ui->addname->text()<<"-"<<this->ui->addauthor->text()<<"-"<<this->ui->addpublisher->text()<<"-"<<this->ui->addcat->text()<<"\r\n";
     file.close();
     QMessageBox :: information(this,"","Book added succesfully!");
 }

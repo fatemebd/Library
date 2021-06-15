@@ -2,7 +2,7 @@
 #define MEMBERFORM_H
 #include <mainwindow.h>
 #include <QMainWindow>
-
+#include <searchform.h>
 namespace Ui {
 class memberform;
 }
@@ -14,6 +14,11 @@ class memberform : public QMainWindow
 public:
     explicit memberform(QWidget *parent = nullptr);
     ~memberform();
+
+private slots:
+    void on_search_clicked();
+
+    void on_show_clicked();
 
 private:
     Ui::memberform *ui;

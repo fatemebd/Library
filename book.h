@@ -8,5 +8,6 @@ public:
     QString name;
     QString author;
     QString publishers;
+    QString category;
 };
 #endif // BOOK_H

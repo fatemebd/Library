@@ -17,6 +17,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     memberform.cpp \
+    searchform.cpp \
     signupform.cpp
 
 HEADERS += \
@@ -28,6 +29,7 @@ HEADERS += \
     forgetpass.h \
     mainwindow.h \
     memberform.h \
+    searchform.h \
     signupform.h \
     users.h
 
@@ -39,6 +41,7 @@ FORMS += \
     forgetpass.ui \
     mainwindow.ui \
     memberform.ui \
+    searchform.ui \
     signupform.ui
 
 # Default rules for deployment.

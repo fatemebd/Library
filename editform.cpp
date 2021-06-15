@@ -17,7 +17,8 @@ editform::editform(QWidget *parent) :
     this->ui->nauthor_2->setDisabled(true);
     this->ui->ppress_2->setDisabled(true);
     this->ui->npress_2->setDisabled(true);
-
+    this->ui->pcategory->setDisabled(true);
+    this->ui->ncategory->setDisabled(true);
 }
 
 editform::~editform()
@@ -34,11 +35,12 @@ void editform::on_back_clicked()
 
 void editform::on_save_clicked()
 {
-    if(this->ui->book->isChecked()==true || this->ui->author->isChecked()==true || this->ui->press->isChecked()==true){
+    if(this->ui->book->isChecked()==true || this->ui->author->isChecked()==true || this->ui->press->isChecked()==true || this->ui->category->isChecked()==true){
         QList<books> A;
         bool name=false;
         bool author=false;
         bool press=false;
+        bool category=false;
         QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
          QTextStream b(&file);
           file.open(QFile::Text|QFile::ReadOnly);
@@ -49,9 +51,21 @@ void editform::on_save_clicked()
              tmp.name=s[0];
              tmp.author=s[1];
              tmp.publishers=s[2];
+             tmp.category=s[3];
              A.append(tmp);
          }
          file.close();
+         if(this->ui->category->isChecked()==true){
+          for(int i=0;i<A.size();i++){
+              if(A[i].name==this->ui->pcategory->text()){
+                  category=true;
+                  A[i].name=this->ui->ncategory->text();
+                  break;
+              }
+           }
+          if(category!=true)
+              QMessageBox :: critical(this,"Foundation Faild","This book is not available!");
+         }
          if(this->ui->book->isChecked()==true){
           for(int i=0;i<A.size();i++){
               if(A[i].name==this->ui->pname_2->text()){

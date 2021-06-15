@@ -39,6 +39,7 @@ void deleteform::on_deletepush_clicked()
          tmp.name=s[0];
          tmp.author=s[1];
          tmp.publishers=s[2];
+         tmp.category=s[3];
          A.append(tmp);
      }
      file.close();
@@ -56,7 +57,7 @@ void deleteform::on_deletepush_clicked()
      file.open(QFile::Text|QFile::WriteOnly);
      for(int i=0;i<A.size();i++){
          QTextStream q(&file);
-         q<<A[i].name<<"-"<<A[i].author<<"-"<<A[i].publishers<<"\r\n";
+         q<<A[i].name<<"-"<<A[i].author<<"-"<<A[i].publishers<<"-"<<A[i].category<<"\r\n";
      }
      file.close();
 }
