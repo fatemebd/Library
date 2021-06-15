@@ -15,6 +15,9 @@ public:
     explicit searchform(QWidget *parent = nullptr);
     ~searchform();
 
+private slots:
+    void on_lineEdit_textChanged(const QString &arg1);
+
 private:
     Ui::searchform *ui;
 };
