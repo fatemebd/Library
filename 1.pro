@@ -18,6 +18,8 @@ SOURCES += \
     mainwindow.cpp \
     memberform.cpp \
     searchform.cpp \
+    searchincat.cpp \
+    showall.cpp \
     signupform.cpp
 
 HEADERS += \
@@ -30,6 +32,8 @@ HEADERS += \
     mainwindow.h \
     memberform.h \
     searchform.h \
+    searchincat.h \
+    showall.h \
     signupform.h \
     users.h
 
@@ -42,6 +46,8 @@ FORMS += \
     mainwindow.ui \
     memberform.ui \
     searchform.ui \
+    searchincat.ui \
+    showall.ui \
     signupform.ui
 
 # Default rules for deployment.

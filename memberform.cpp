@@ -74,3 +74,15 @@ void memberform::on_show_clicked()
             j++;
     }
 }
+
+void memberform::on_showcat_clicked()
+{
+    showall *s =new showall;
+    s->show();
+}
+
+void memberform::on_searchincat_clicked()
+{
+    searchincat * s=new searchincat;
+    s->show();
+}
