@@ -17,6 +17,7 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     memberform.cpp \
+    rent.cpp \
     searchform.cpp \
     searchincat.cpp \
     showall.cpp \
@@ -31,6 +32,7 @@ HEADERS += \
     forgetpass.h \
     mainwindow.h \
     memberform.h \
+    rent.h \
     searchform.h \
     searchincat.h \
     showall.h \
@@ -45,6 +47,7 @@ FORMS += \
     forgetpass.ui \
     mainwindow.ui \
     memberform.ui \
+    rent.ui \
     searchform.ui \
     searchincat.ui \
     showall.ui \

@@ -26,6 +26,8 @@ private slots:
 
     void on_showall_clicked();
 
+    void on_number_clicked();
+
 private:
     Ui::adminform *ui;
 };

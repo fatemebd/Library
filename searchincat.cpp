@@ -36,6 +36,7 @@ void searchincat::on_search_textChanged(const QString &input)
          tmp.author=s[1];
          tmp.publishers=s[2];
          tmp.category=s[3];
+         tmp.rent=s[4];
          A.append(tmp);
      }
      file.close();

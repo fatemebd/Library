@@ -36,6 +36,7 @@ void showall::on_search_textChanged(const QString &input)
          tmp.author=s[1];
          tmp.publishers=s[2];
          tmp.category=s[3];
+         tmp.rent=s[4];
          A.append(tmp);
      }
      file.close();
@@ -53,16 +54,13 @@ void showall::on_search_textChanged(const QString &input)
                c2 = new QTableWidgetItem;
                c3 = new QTableWidgetItem;
 
-
                c1->setText(A[i].name);
                c2->setText(A[i].author);
                c3->setText(A[i].publishers);
 
-
                c1->setTextAlignment(Qt::AlignCenter);
                c2->setTextAlignment(Qt::AlignCenter);
                c3->setTextAlignment(Qt::AlignCenter);
-
 
                this->ui->table->setItem(j,0,c1);
                this->ui->table->setItem(j,1,c2);

@@ -52,6 +52,7 @@ void editform::on_save_clicked()
              tmp.author=s[1];
              tmp.publishers=s[2];
              tmp.category=s[3];
+             tmp.rent=s[4];
              A.append(tmp);
          }
          file.close();
@@ -105,7 +106,7 @@ void editform::on_save_clicked()
          file.open(QFile::Text|QFile::WriteOnly);
          for(int i=0;i<A.size();i++){
              QTextStream q(&file);
-             q<<A[i].name<<"-"<<A[i].author<<"-"<<A[i].publishers<<"\r\n";
+             q<<A[i].name<<"-"<<A[i].author<<"-"<<A[i].publishers<<"-"<<A[i].category<<"-"<<A[i].rent<<"\r\n";
          }
          file.close();
     }

@@ -9,5 +9,6 @@ public:
     QString author;
     QString publishers;
     QString category;
+    QString rent;
 };
 #endif // BOOK_H

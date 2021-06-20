@@ -7,12 +7,13 @@
 #include <QTableWidgetItem>
 #include <QTextStream>
 
-memberform::memberform(QWidget *parent) :
+memberform::memberform(QWidget *parent, QString * username) :
     QMainWindow(parent),
     ui(new Ui::memberform)
 {
     ui->setupUi(this);
     ui->table->hide();
+    this->username=username;
 }
 
 memberform::~memberform()
@@ -41,6 +42,7 @@ void memberform::on_show_clicked()
          tmp.author=s[1];
          tmp.publishers=s[2];
          tmp.category=s[3];
+         tmp.rent=s[4];
          A.append(tmp);
      }
      file.close();
@@ -48,6 +50,7 @@ void memberform::on_show_clicked()
       QTableWidgetItem* c2;
        QTableWidgetItem* c3;
         QTableWidgetItem* c4;
+
         int j=0;
     for(int i=0;i<A.size();i++){
             ui->table->insertRow(j);
@@ -57,20 +60,24 @@ void memberform::on_show_clicked()
             c3 = new QTableWidgetItem;
             c4 = new QTableWidgetItem;
 
+
             c1->setText(A[i].name);
             c2->setText(A[i].author);
             c3->setText(A[i].publishers);
             c4->setText(A[i].category);
+
 
             c1->setTextAlignment(Qt::AlignCenter);
             c2->setTextAlignment(Qt::AlignCenter);
             c3->setTextAlignment(Qt::AlignCenter);
             c4->setTextAlignment(Qt::AlignCenter);
 
+
             this->ui->table->setItem(j,0,c1);
             this->ui->table->setItem(j,1,c2);
             this->ui->table->setItem(j,2,c3);
             this->ui->table->setItem(j,3,c4);
+
             j++;
     }
 }
@@ -84,5 +91,18 @@ void memberform::on_showcat_clicked()
 void memberform::on_searchincat_clicked()
 {
     searchincat * s=new searchincat;
+    s->show();
+}
+
+void memberform::on_rent_clicked()
+{
+    rent * s=new rent(this, username);
+    s->show();
+}
+
+void memberform::on_pushButton_3_clicked()
+{
+    MainWindow * s=new MainWindow;
+    this->close();
     s->show();
 }

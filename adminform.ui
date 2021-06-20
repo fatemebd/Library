@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>651</width>
+    <width>726</width>
     <height>568</height>
    </rect>
   </property>
@@ -192,6 +192,97 @@ color:rgb(0, 0, 107);
           <number>0</number>
          </property>
          <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="text">
+              <string>Rented books :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QTextBrowser" name="rentbook">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>50</width>
+               <height>5</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>100</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:white;</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <widget class="QTableWidget" name="table">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -201,7 +292,7 @@ color:rgb(0, 0, 107);
            </property>
            <property name="minimumSize">
             <size>
-             <width>400</width>
+             <width>500</width>
              <height>300</height>
             </size>
            </property>
@@ -227,6 +318,11 @@ border-radius : 15px;</string>
            <column>
             <property name="text">
              <string>category</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Rented by</string>
             </property>
            </column>
           </widget>
@@ -318,6 +414,32 @@ color:rgb(0, 0, 107);
            </spacer>
           </item>
           <item>
+           <widget class="QPushButton" name="number">
+            <property name="minimumSize">
+             <size>
+              <width>150</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Number of rented books</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_9">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
            <layout class="QHBoxLayout" name="horizontalLayout_2">
             <property name="topMargin">
              <number>0</number>
@@ -329,6 +451,12 @@ color:rgb(0, 0, 107);
                 <width>150</width>
                 <height>30</height>
                </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>click to show</string>
               </property>
               <property name="text">
                <string>Show all books</string>
@@ -376,6 +504,12 @@ color:rgb(0, 0, 107);
                 <height>30</height>
                </size>
               </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>click to add</string>
+              </property>
               <property name="text">
                <string>Add new book</string>
               </property>
@@ -422,6 +556,12 @@ color:rgb(0, 0, 107);
                 <height>30</height>
                </size>
               </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>click to delete</string>
+              </property>
               <property name="text">
                <string>Delete a book</string>
               </property>
@@ -467,6 +607,12 @@ color:rgb(0, 0, 107);
                 <width>150</width>
                 <height>30</height>
                </size>
+              </property>
+              <property name="cursor">
+               <cursorShape>PointingHandCursor</cursorShape>
+              </property>
+              <property name="toolTip">
+               <string>click to edit</string>
               </property>
               <property name="text">
                <string>Edit info</string>
@@ -521,12 +667,12 @@ color:rgb(0, 0, 107);
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>627</x>
-     <y>20</y>
+     <x>692</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
-     <x>640</x>
-     <y>67</y>
+     <x>716</x>
+     <y>42</y>
     </hint>
    </hints>
   </connection>
@@ -537,12 +683,12 @@ color:rgb(0, 0, 107);
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>493</x>
-     <y>182</y>
+     <x>577</x>
+     <y>219</y>
     </hint>
     <hint type="destinationlabel">
-     <x>405</x>
-     <y>194</y>
+     <x>506</x>
+     <y>267</y>
     </hint>
    </hints>
   </connection>

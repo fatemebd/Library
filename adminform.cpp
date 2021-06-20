@@ -7,6 +7,7 @@
 #include <QTableWidget>
 #include <QTableWidgetItem>
 #include <QTextStream>
+#include <QtDebug>
 
 adminform::adminform(QWidget *parent) :
     QMainWindow(parent),
@@ -65,13 +66,21 @@ void adminform::on_showall_clicked()
          tmp.author=s[1];
          tmp.publishers=s[2];
          tmp.category=s[3];
+         tmp.rent=s[4];
          A.append(tmp);
+         qDebug()<<tmp.name<<" "<<tmp.author<<" "<<tmp.publishers<<" "<<tmp.category<<" "<<tmp.rent;
+
      }
+     qDebug()<<"1";
+
      file.close();
+     qDebug()<<"we";
      QTableWidgetItem* c1;
       QTableWidgetItem* c2;
        QTableWidgetItem* c3;
         QTableWidgetItem* c4;
+        QTableWidgetItem* c5;
+qDebug()<<" "<<"er";
         int j=0;
     for(int i=0;i<A.size();i++){
             ui->table->insertRow(j);
@@ -80,21 +89,42 @@ void adminform::on_showall_clicked()
             c2 = new QTableWidgetItem;
             c3 = new QTableWidgetItem;
             c4 = new QTableWidgetItem;
+            c5 = new QTableWidgetItem;
+
 
             c1->setText(A[i].name);
             c2->setText(A[i].author);
             c3->setText(A[i].publishers);
             c4->setText(A[i].category);
+            c5->setText(A[i].rent);
 
             c1->setTextAlignment(Qt::AlignCenter);
             c2->setTextAlignment(Qt::AlignCenter);
             c3->setTextAlignment(Qt::AlignCenter);
             c4->setTextAlignment(Qt::AlignCenter);
+            c5->setTextAlignment(Qt::AlignCenter);
+
 
             this->ui->table->setItem(j,0,c1);
             this->ui->table->setItem(j,1,c2);
             this->ui->table->setItem(j,2,c3);
             this->ui->table->setItem(j,3,c4);
+            this->ui->table->setItem(j,4,c5);
+
             j++;
     }
+}
+
+void adminform::on_number_clicked()
+{
+    QFile file("C:/Users/DANESH/Desktop/ap/1/files/rentedbooks.txt");
+     QTextStream b(&file);
+     int s;
+      file.open(QFile::Text|QFile::ReadOnly);
+      while(!b.atEnd())
+      {
+           s=b.readLine().toInt();
+      }
+      file.close();
+    ui->rentbook->setText(QString::number(s));
 }

@@ -70,7 +70,7 @@ void MainWindow::on_login_clicked()
                      s->show();
                  }
                  else{
-                     memberform * s= new memberform;
+                     memberform * s= new memberform(this,&tmp.username);
                      this->close();
                      s->show();
                  }
