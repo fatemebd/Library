@@ -1,5 +1,5 @@
-#include "rent.h"
-#include "ui_rent.h"
+#include "returnbook.h"
+#include "ui_returnbook.h"
 #include <book.h>
 #include <QFile>
 #include <QString>
@@ -7,21 +7,21 @@
 #include <QMessageBox>
 #include <QList>
 #include <QDebug>
-rent::rent(QWidget *parent,QString username) :
+
+returnbook::returnbook(QWidget *parent) :
     QMainWindow(parent),
-    ui(new Ui::rent)
+    ui(new Ui::returnbook)
 {
     setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
-    this->username=username;
 }
 
-rent::~rent()
+returnbook::~returnbook()
 {
     delete ui;
 }
 
-void rent::on_rentbook_clicked()
+void returnbook::on_returnb_clicked()
 {
     QList<books> A;
     bool exist=false;
@@ -41,38 +41,26 @@ void rent::on_rentbook_clicked()
     }
     file.close();
     for(int i=0;i<A.size();i++){
-        if(A[i].name==ui->bookname->text()){
+        if(A[i].name==ui->bookn->text()){
             exist=true;
-            if(A[i].rent!="empty"){
-                QMessageBox::critical(this,"","This book is rented by someone else!");
-            }
-            else{
+
                 QFile file1("rentedbooks.txt");
                  QTextStream b(&file1);
-                 int s=0;
-                /*  file1.open(QFile::Text|QFile::ReadWrite);
-                  if(b.atEnd()==true){
-                      //QTextStream p(&file1);
-                      b<<QString::number(0);
-                  }
-                  file.close();*/
+                 int s;
                   file1.open(QFile::Text|QFile::ReadOnly);
-
                   while(!b.atEnd())
                   {
                        s=b.readLine().toInt();
-                  //qDebug()<<e;
                   }
                   file1.close();
-                  s++;
+                  s--;
                   file1.open(QFile::Text|QFile::WriteOnly);
                   QTextStream q(&file1);
                   q<<QString::number(s);
                   file1.close();
-                A[i].rent=username;
+                A[i].rent="empty";
                 //qDebug()<<A[i].rent;
-                QMessageBox::information(this,"","Book rented succesfully!");
-            }
+                QMessageBox::information(this,"","Book returned succesfully!");
         }
     }
     if(exist!=true)

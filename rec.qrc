@@ -9,5 +9,6 @@
     </qresource>
     <qresource prefix="/icones">
         <file>images/delete-sign.png</file>
+        <file>images/786263.png</file>
     </qresource>
 </RCC>

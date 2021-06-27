@@ -18,6 +18,7 @@ SOURCES += \
     mainwindow.cpp \
     memberform.cpp \
     rent.cpp \
+    returnbook.cpp \
     searchform.cpp \
     searchincat.cpp \
     showall.cpp \
@@ -33,6 +34,7 @@ HEADERS += \
     mainwindow.h \
     memberform.h \
     rent.h \
+    returnbook.h \
     searchform.h \
     searchincat.h \
     showall.h \
@@ -48,6 +50,7 @@ FORMS += \
     mainwindow.ui \
     memberform.ui \
     rent.ui \
+    returnbook.ui \
     searchform.ui \
     searchincat.ui \
     showall.ui \

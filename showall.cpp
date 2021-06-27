@@ -10,6 +10,7 @@ showall::showall(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::showall)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -25,7 +26,7 @@ void showall::on_search_textChanged(const QString &input)
             for (int i = 0 ; i < 20 ; ++i )
                 ui->table->removeRow(i);
     QList<books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())

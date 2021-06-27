@@ -10,10 +10,10 @@ class rent;
 class rent : public QMainWindow
 {
     Q_OBJECT
-    QString *username;
+    QString username;
 
 public:
-    explicit rent(QWidget *parent = nullptr,QString* username=nullptr);
+    explicit rent(QWidget *parent = nullptr,QString username=nullptr);
     ~rent();
 
 private slots:

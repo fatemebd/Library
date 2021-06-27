@@ -11,6 +11,7 @@ addform::addform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::addform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -22,7 +23,7 @@ addform::~addform()
 void addform::on_add_clicked()
 {
     QList <books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
     file.open(QFile::Append|QFile::WriteOnly);
     QTextStream q(&file);
     q<<this->ui->addname->text()<<"-"<<this->ui->addauthor->text()<<"-"<<this->ui->addpublisher->text()<<"-"<<this->ui->addcat->text()<<"-"<<"empty"<<"\r\n";

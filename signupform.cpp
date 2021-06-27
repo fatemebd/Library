@@ -10,6 +10,7 @@ signupform::signupform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::signupform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -31,7 +32,7 @@ void signupform::on_signup_clicked()
 {
     QList <user> A;
 
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/usersinfo.txt");
+    QFile file("usersinfo.txt");
 
     bool confirm=false;
     bool exist=true;

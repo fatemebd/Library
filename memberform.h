@@ -14,9 +14,9 @@ class memberform;
 class memberform : public QMainWindow
 {
     Q_OBJECT
-QString * username;
+QString  username;
 public:
-explicit memberform(QWidget *parent = nullptr,QString* username=nullptr);
+explicit memberform(QWidget *parent = nullptr,QString username=nullptr);
     ~memberform();
 
 private slots:

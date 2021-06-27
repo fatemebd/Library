@@ -13,8 +13,11 @@ adminform::adminform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::adminform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
      ui->table->hide();
+     ui->label->hide();
+     ui->rentbook->hide();
 }
 
 adminform::~adminform()
@@ -53,9 +56,11 @@ void adminform::on_delete_2_clicked()
 
 void adminform::on_showall_clicked()
 {
-
+    for (int i = 0 ; i < 20 ; ++i )
+            for (int i = 0 ; i < 20 ; ++i )
+                ui->table->removeRow(i);
     QList<books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())
@@ -68,19 +73,13 @@ void adminform::on_showall_clicked()
          tmp.category=s[3];
          tmp.rent=s[4];
          A.append(tmp);
-         qDebug()<<tmp.name<<" "<<tmp.author<<" "<<tmp.publishers<<" "<<tmp.category<<" "<<tmp.rent;
-
      }
-     qDebug()<<"1";
-
-     file.close();
-     qDebug()<<"we";
+   file.close();
      QTableWidgetItem* c1;
       QTableWidgetItem* c2;
        QTableWidgetItem* c3;
         QTableWidgetItem* c4;
         QTableWidgetItem* c5;
-qDebug()<<" "<<"er";
         int j=0;
     for(int i=0;i<A.size();i++){
             ui->table->insertRow(j);
@@ -117,7 +116,7 @@ qDebug()<<" "<<"er";
 
 void adminform::on_number_clicked()
 {
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/rentedbooks.txt");
+    QFile file("rentedbooks.txt");
      QTextStream b(&file);
      int s;
       file.open(QFile::Text|QFile::ReadOnly);
@@ -127,4 +126,10 @@ void adminform::on_number_clicked()
       }
       file.close();
     ui->rentbook->setText(QString::number(s));
+}
+
+void adminform::on_returnbook_clicked()
+{
+    returnbook * s=new returnbook;
+    s->show();
 }

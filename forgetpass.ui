@@ -84,6 +84,16 @@ background-color: rgb(249, 255, 198);
         <property name="text">
          <string/>
         </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/786263.png</normaloff>:/icones/images/786263.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
@@ -244,6 +254,9 @@ color:rgb(0, 0, 107);
                <height>20</height>
               </size>
              </property>
+             <property name="placeholderText">
+              <string>Your username</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -316,6 +329,9 @@ color:rgb(0, 0, 107);
              <property name="toolTip">
               <string>enter your tooltip</string>
              </property>
+             <property name="placeholderText">
+              <string>Your keyword</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -382,6 +398,9 @@ color:rgb(0, 0, 107);
              <property name="toolTip">
               <string>enter your password</string>
              </property>
+             <property name="placeholderText">
+              <string>New password</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -447,6 +466,9 @@ color:rgb(0, 0, 107);
              </property>
              <property name="toolTip">
               <string>re-enter your password</string>
+             </property>
+             <property name="placeholderText">
+              <string>Confirm password</string>
              </property>
             </widget>
            </item>
@@ -666,6 +688,22 @@ color:rgb(0, 0, 107);
     <hint type="destinationlabel">
      <x>597</x>
      <y>48</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>forgetpass</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>529</x>
+     <y>38</y>
     </hint>
    </hints>
   </connection>

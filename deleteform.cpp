@@ -10,6 +10,7 @@ deleteform::deleteform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::deleteform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -29,7 +30,7 @@ void deleteform::on_deletepush_clicked()
 {
      QList<books> A;
      bool exist=false;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())

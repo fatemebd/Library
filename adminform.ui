@@ -90,6 +90,16 @@ background-color: rgb(249, 255, 198);
         <property name="text">
          <string/>
         </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/786263.png</normaloff>:/icones/images/786263.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
@@ -192,6 +202,19 @@ color:rgb(0, 0, 107);
           <number>0</number>
          </property>
          <item>
+          <spacer name="verticalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>10</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
           <layout class="QHBoxLayout" name="horizontalLayout_7">
            <property name="topMargin">
             <number>0</number>
@@ -211,6 +234,10 @@ color:rgb(0, 0, 107);
            </item>
            <item>
             <widget class="QLabel" name="label">
+             <property name="styleSheet">
+              <string notr="true">background-color: rgba(255, 205, 88,0.0);
+</string>
+             </property>
              <property name="text">
               <string>Rented books :</string>
              </property>
@@ -277,7 +304,7 @@ color:rgb(0, 0, 107);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>40</height>
+             <height>30</height>
             </size>
            </property>
           </spacer>
@@ -326,6 +353,19 @@ border-radius : 15px;</string>
             </property>
            </column>
           </widget>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </item>
@@ -417,12 +457,38 @@ color:rgb(0, 0, 107);
            <widget class="QPushButton" name="number">
             <property name="minimumSize">
              <size>
-              <width>150</width>
+              <width>160</width>
               <height>30</height>
              </size>
             </property>
             <property name="text">
              <string>Number of rented books</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_10">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="returnbook">
+            <property name="minimumSize">
+             <size>
+              <width>160</width>
+              <height>30</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Return book</string>
             </property>
            </widget>
           </item>
@@ -448,7 +514,7 @@ color:rgb(0, 0, 107);
              <widget class="QPushButton" name="showall">
               <property name="minimumSize">
                <size>
-                <width>150</width>
+                <width>160</width>
                 <height>30</height>
                </size>
               </property>
@@ -483,19 +549,6 @@ color:rgb(0, 0, 107);
             <property name="topMargin">
              <number>0</number>
             </property>
-            <item>
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
             <item>
              <widget class="QPushButton" name="add">
               <property name="minimumSize">
@@ -536,19 +589,6 @@ color:rgb(0, 0, 107);
              <number>0</number>
             </property>
             <item>
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
              <widget class="QPushButton" name="delete_2">
               <property name="minimumSize">
                <size>
@@ -588,23 +628,10 @@ color:rgb(0, 0, 107);
              <number>0</number>
             </property>
             <item>
-             <spacer name="horizontalSpacer_6">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
              <widget class="QPushButton" name="edit">
               <property name="minimumSize">
                <size>
-                <width>150</width>
+                <width>160</width>
                 <height>30</height>
                </size>
               </property>
@@ -683,12 +710,60 @@ color:rgb(0, 0, 107);
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>577</x>
-     <y>219</y>
+     <x>705</x>
+     <y>279</y>
     </hint>
     <hint type="destinationlabel">
      <x>506</x>
      <y>267</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number</sender>
+   <signal>clicked()</signal>
+   <receiver>rentbook</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>577</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>398</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number</sender>
+   <signal>clicked()</signal>
+   <receiver>label</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>664</x>
+     <y>126</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>166</x>
+     <y>133</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>adminform</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>650</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>620</x>
+     <y>30</y>
     </hint>
    </hints>
   </connection>

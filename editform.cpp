@@ -10,6 +10,7 @@ editform::editform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::editform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
     this->ui->pname_2->setDisabled(true);
     this->ui->nname_2->setDisabled(true);
@@ -41,7 +42,7 @@ void editform::on_save_clicked()
         bool author=false;
         bool press=false;
         bool category=false;
-        QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+        QFile file("booksinfo.txt");
          QTextStream b(&file);
           file.open(QFile::Text|QFile::ReadOnly);
          while(!b.atEnd())

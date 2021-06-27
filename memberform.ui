@@ -42,8 +42,15 @@ background-color: rgb(249, 255, 198);
           <height>30</height>
          </size>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/images/images/return.png</normaloff>:/images/images/return.png</iconset>
         </property>
        </widget>
       </item>
@@ -68,8 +75,21 @@ background-color: rgb(249, 255, 198);
           <height>30</height>
          </size>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/786263.png</normaloff>:/icones/images/786263.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -81,8 +101,21 @@ background-color: rgb(249, 255, 198);
           <height>30</height>
          </size>
         </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/delete-sign.png</normaloff>:/icones/images/delete-sign.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
         </property>
        </widget>
       </item>
@@ -252,8 +285,11 @@ border-radus: 15px;</string>
              <property name="minimumSize">
               <size>
                <width>190</width>
-               <height>20</height>
+               <height>30</height>
               </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
              </property>
              <property name="text">
               <string>Show all books</string>
@@ -298,8 +334,14 @@ border-radus: 15px;</string>
              <property name="minimumSize">
               <size>
                <width>190</width>
-               <height>20</height>
+               <height>30</height>
               </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>search</string>
              </property>
              <property name="text">
               <string>Search</string>
@@ -344,8 +386,14 @@ border-radus: 15px;</string>
              <property name="minimumSize">
               <size>
                <width>190</width>
-               <height>20</height>
+               <height>30</height>
               </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>show all</string>
              </property>
              <property name="text">
               <string>Show all books from one category</string>
@@ -390,8 +438,14 @@ border-radus: 15px;</string>
              <property name="minimumSize">
               <size>
                <width>190</width>
-               <height>20</height>
+               <height>30</height>
               </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>rent</string>
              </property>
              <property name="text">
               <string>Rent a book</string>
@@ -415,16 +469,50 @@ border-radus: 15px;</string>
          </item>
          <item>
           <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="spacing">
+            <number>0</number>
+           </property>
            <property name="topMargin">
             <number>0</number>
            </property>
            <item>
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
             <widget class="QPushButton" name="searchincat">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
              <property name="minimumSize">
               <size>
                <width>190</width>
-               <height>20</height>
+               <height>30</height>
               </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>190</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
+             </property>
+             <property name="toolTip">
+              <string>search</string>
              </property>
              <property name="text">
               <string>Search in category</string>
@@ -467,7 +555,9 @@ border-radus: 15px;</string>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="rec.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>show</sender>
@@ -476,12 +566,44 @@ border-radus: 15px;</string>
    <slot>show()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>470</x>
-     <y>189</y>
+     <x>635</x>
+     <y>141</y>
     </hint>
     <hint type="destinationlabel">
      <x>396</x>
      <y>203</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>memberform</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>634</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>643</x>
+     <y>46</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>memberform</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>588</x>
+     <y>28</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>554</x>
+     <y>29</y>
     </hint>
    </hints>
   </connection>

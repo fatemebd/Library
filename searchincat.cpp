@@ -10,6 +10,7 @@ searchincat::searchincat(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::searchincat)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -25,7 +26,7 @@ void searchincat::on_search_textChanged(const QString &input)
                 ui->table->removeRow(i);
     QString cat=ui->cat->text();
     QList<books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())

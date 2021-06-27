@@ -1,2 +1,0 @@
-A-b-c-d-hesi.sh
-B-d-f-f-d

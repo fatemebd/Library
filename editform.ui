@@ -90,6 +90,16 @@ background-color: rgb(249, 255, 198);
         <property name="text">
          <string/>
         </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/786263.png</normaloff>:/icones/images/786263.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
@@ -228,7 +238,7 @@ color:rgb(0, 0, 107);
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>50</height>
+               <height>40</height>
               </size>
              </property>
             </spacer>
@@ -264,7 +274,7 @@ color:rgb(0, 0, 107);
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>60</height>
+               <height>50</height>
               </size>
              </property>
             </spacer>
@@ -333,7 +343,7 @@ color:rgb(0, 0, 107);
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>40</height>
+               <height>60</height>
               </size>
              </property>
             </spacer>
@@ -363,7 +373,7 @@ color:rgb(0, 0, 107);
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>120</height>
+               <height>140</height>
               </size>
              </property>
             </spacer>
@@ -405,69 +415,6 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_7">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <spacer name="horizontalSpacer_13">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Fixed</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>42</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="pname">
-               <property name="text">
-                <string>Previuos Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_14">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="nname">
-               <property name="text">
-                <string>New Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_15">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_4">
              <property name="topMargin">
               <number>0</number>
@@ -496,6 +443,9 @@ color:rgb(0, 0, 107);
                <property name="toolTip">
                 <string>write past name</string>
                </property>
+               <property name="placeholderText">
+                <string>Previous name</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -521,6 +471,9 @@ color:rgb(0, 0, 107);
                </property>
                <property name="toolTip">
                 <string>write name</string>
+               </property>
+               <property name="placeholderText">
+                <string>New name</string>
                </property>
               </widget>
              </item>
@@ -553,69 +506,6 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_8">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <spacer name="horizontalSpacer_17">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Fixed</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>42</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="pauthor">
-               <property name="text">
-                <string>Previuos Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_16">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="nauthor">
-               <property name="text">
-                <string>New Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_18">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_5">
              <property name="topMargin">
               <number>0</number>
@@ -644,6 +534,9 @@ color:rgb(0, 0, 107);
                <property name="toolTip">
                 <string>write past author</string>
                </property>
+               <property name="placeholderText">
+                <string>Book's name</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -669,6 +562,9 @@ color:rgb(0, 0, 107);
                </property>
                <property name="toolTip">
                 <string>write new name</string>
+               </property>
+               <property name="placeholderText">
+                <string>New author</string>
                </property>
               </widget>
              </item>
@@ -701,69 +597,6 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_9">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <spacer name="horizontalSpacer_20">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Fixed</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>42</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="ppress">
-               <property name="text">
-                <string>Previuos Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_19">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="npress">
-               <property name="text">
-                <string>New Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_21">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
-           </item>
-           <item>
             <layout class="QHBoxLayout" name="horizontalLayout_6">
              <property name="topMargin">
               <number>0</number>
@@ -792,6 +625,9 @@ color:rgb(0, 0, 107);
                <property name="toolTip">
                 <string>write past publisher</string>
                </property>
+               <property name="placeholderText">
+                <string>Book's name</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -817,6 +653,9 @@ color:rgb(0, 0, 107);
                </property>
                <property name="toolTip">
                 <string>write new publisher</string>
+               </property>
+               <property name="placeholderText">
+                <string>New pub</string>
                </property>
               </widget>
              </item>
@@ -846,73 +685,10 @@ color:rgb(0, 0, 107);
              <property name="sizeHint" stdset="0">
               <size>
                <width>20</width>
-               <height>30</height>
+               <height>40</height>
               </size>
              </property>
             </spacer>
-           </item>
-           <item>
-            <layout class="QHBoxLayout" name="horizontalLayout_11">
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <spacer name="horizontalSpacer_26">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeType">
-                <enum>QSizePolicy::Fixed</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>42</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="label_2">
-               <property name="text">
-                <string>previuos Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_27">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-             <item>
-              <widget class="QLabel" name="label">
-               <property name="text">
-                <string>New Name</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <spacer name="horizontalSpacer_28">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-               <property name="sizeHint" stdset="0">
-                <size>
-                 <width>40</width>
-                 <height>20</height>
-                </size>
-               </property>
-              </spacer>
-             </item>
-            </layout>
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_12">
@@ -943,6 +719,9 @@ color:rgb(0, 0, 107);
                <property name="toolTip">
                 <string>enter past category</string>
                </property>
+               <property name="placeholderText">
+                <string>Book's name</string>
+               </property>
               </widget>
              </item>
              <item>
@@ -968,6 +747,9 @@ color:rgb(0, 0, 107);
                </property>
                <property name="toolTip">
                 <string>enter new category</string>
+               </property>
+               <property name="placeholderText">
+                <string>New category</string>
                </property>
               </widget>
              </item>
@@ -1131,11 +913,11 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>160</x>
-     <y>184</y>
+     <y>182</y>
     </hint>
     <hint type="destinationlabel">
      <x>420</x>
-     <y>191</y>
+     <y>185</y>
     </hint>
    </hints>
   </connection>
@@ -1147,11 +929,11 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>185</x>
-     <y>184</y>
+     <y>182</y>
     </hint>
     <hint type="destinationlabel">
      <x>614</x>
-     <y>191</y>
+     <y>185</y>
     </hint>
    </hints>
   </connection>
@@ -1163,11 +945,11 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>161</x>
-     <y>276</y>
+     <y>264</y>
     </hint>
     <hint type="destinationlabel">
      <x>420</x>
-     <y>290</y>
+     <y>270</y>
     </hint>
    </hints>
   </connection>
@@ -1179,11 +961,11 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>183</x>
-     <y>276</y>
+     <y>264</y>
     </hint>
     <hint type="destinationlabel">
      <x>614</x>
-     <y>290</y>
+     <y>270</y>
     </hint>
    </hints>
   </connection>
@@ -1195,11 +977,11 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>161</x>
-     <y>368</y>
+     <y>356</y>
     </hint>
     <hint type="destinationlabel">
      <x>420</x>
-     <y>388</y>
+     <y>355</y>
     </hint>
    </hints>
   </connection>
@@ -1211,11 +993,59 @@ color:rgb(0, 0, 107);
    <hints>
     <hint type="sourcelabel">
      <x>175</x>
-     <y>368</y>
+     <y>356</y>
     </hint>
     <hint type="destinationlabel">
      <x>614</x>
-     <y>388</y>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>editform</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>661</x>
+     <y>30</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>669</x>
+     <y>65</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>pcategory</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>127</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>302</x>
+     <y>418</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>category</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>ncategory</receiver>
+   <slot>setEnabled(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>190</x>
+     <y>424</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>419</y>
     </hint>
    </hints>
   </connection>

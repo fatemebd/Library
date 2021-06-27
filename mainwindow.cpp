@@ -11,6 +11,7 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -41,7 +42,7 @@ void MainWindow::on_login_clicked()
     int index;
     QString str=this->ui->usernamee->text();
     QString strpass=this->ui->passwordd->text();
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/usersinfo.txt");
+    QFile file("usersinfo.txt");
      QTextStream a(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!a.atEnd())
@@ -57,6 +58,7 @@ void MainWindow::on_login_clicked()
          A.append(tmp);
      }
      file.close();
+
      for(int i=0;i<A.size();i++){
          user tmp=A[i];
 
@@ -70,7 +72,7 @@ void MainWindow::on_login_clicked()
                      s->show();
                  }
                  else{
-                     memberform * s= new memberform(this,&tmp.username);
+                     memberform * s= new memberform(this,tmp.username);
                      this->close();
                      s->show();
                  }

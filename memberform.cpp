@@ -7,10 +7,11 @@
 #include <QTableWidgetItem>
 #include <QTextStream>
 
-memberform::memberform(QWidget *parent, QString * username) :
+memberform::memberform(QWidget *parent, QString  username) :
     QMainWindow(parent),
     ui(new Ui::memberform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
     ui->table->hide();
     this->username=username;
@@ -31,7 +32,7 @@ void memberform::on_show_clicked()
 {
 
     QList<books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())
@@ -96,7 +97,7 @@ void memberform::on_searchincat_clicked()
 
 void memberform::on_rent_clicked()
 {
-    rent * s=new rent(this, username);
+    rent * s=new rent(this, this->username);
     s->show();
 }
 

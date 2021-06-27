@@ -84,6 +84,16 @@ background-color: rgb(249, 255, 198);
         <property name="text">
          <string/>
         </property>
+        <property name="icon">
+         <iconset resource="rec.qrc">
+          <normaloff>:/icones/images/786263.png</normaloff>:/icones/images/786263.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
        </widget>
       </item>
       <item>
@@ -267,6 +277,9 @@ color:rgb(0, 0, 107);
              <property name="toolTip">
               <string>enter your first name</string>
              </property>
+             <property name="placeholderText">
+              <string>Your first name</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -335,6 +348,9 @@ color:rgb(0, 0, 107);
              </property>
              <property name="toolTip">
               <string>enter your last name</string>
+             </property>
+             <property name="placeholderText">
+              <string>Your last name</string>
              </property>
             </widget>
            </item>
@@ -405,6 +421,9 @@ color:rgb(0, 0, 107);
              <property name="toolTip">
               <string>enter your email</string>
              </property>
+             <property name="placeholderText">
+              <string>Your e-mail</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -474,6 +493,9 @@ color:rgb(0, 0, 107);
              <property name="toolTip">
               <string>enter username</string>
              </property>
+             <property name="placeholderText">
+              <string>Your username</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -542,6 +564,9 @@ color:rgb(0, 0, 107);
              </property>
              <property name="toolTip">
               <string>enter password</string>
+             </property>
+             <property name="placeholderText">
+              <string>Your password</string>
              </property>
             </widget>
            </item>
@@ -624,6 +649,9 @@ color:rgb(0, 0, 107);
              </property>
              <property name="toolTip">
               <string>re-enter your password</string>
+             </property>
+             <property name="placeholderText">
+              <string>Confirm password</string>
              </property>
             </widget>
            </item>
@@ -748,6 +776,9 @@ color:rgb(0, 0, 107);
              </property>
              <property name="toolTip">
               <string>enter your keyword</string>
+             </property>
+             <property name="placeholderText">
+              <string>Your keyword</string>
              </property>
             </widget>
            </item>
@@ -913,7 +944,7 @@ background-color:  rgb(139, 193, 14);
            <property name="sizeHint" stdset="0">
             <size>
              <width>20</width>
-             <height>40</height>
+             <height>30</height>
             </size>
            </property>
           </spacer>
@@ -979,12 +1010,28 @@ background-color:  rgb(139, 193, 14);
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>578</x>
-     <y>26</y>
+     <x>640</x>
+     <y>36</y>
     </hint>
     <hint type="destinationlabel">
      <x>600</x>
      <y>62</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>signupform</receiver>
+   <slot>showMinimized()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>551</x>
+     <y>25</y>
     </hint>
    </hints>
   </connection>

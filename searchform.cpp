@@ -10,6 +10,7 @@ searchform::searchform(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::searchform)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -24,7 +25,7 @@ void searchform::on_lineEdit_textChanged(const QString &input)
             for (int i = 0 ; i < 20 ; ++i )
                 ui->table->removeRow(i);
     QList<books> A;
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/booksinfo.txt");
+    QFile file("booksinfo.txt");
      QTextStream b(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!b.atEnd())
@@ -78,4 +79,9 @@ void searchform::on_lineEdit_textChanged(const QString &input)
                j++;
            }
     }
+}
+
+void searchform::on_pushButton_3_clicked()
+{
+
 }

@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <addform.h>
 #include <deleteform.h>
+#include <returnbook.h>
 namespace Ui {
 class adminform;
 }
@@ -27,6 +28,8 @@ private slots:
     void on_showall_clicked();
 
     void on_number_clicked();
+
+    void on_returnbook_clicked();
 
 private:
     Ui::adminform *ui;

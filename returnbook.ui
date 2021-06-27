@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>showall</class>
- <widget class="QMainWindow" name="showall">
+ <class>returnbook</class>
+ <widget class="QMainWindow" name="returnbook">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>515</width>
-    <height>302</height>
+    <width>507</width>
+    <height>317</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">#showall
+   <string notr="true">#returnbook
 {
 border-image :  url(:/images/images/Library-Wallpaper-19-2560x1600-1.jpg)
 }
@@ -105,7 +105,7 @@ background-color: rgb(249, 255, 198);
      </layout>
     </item>
     <item>
-     <spacer name="verticalSpacer">
+     <spacer name="verticalSpacer_2">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -120,10 +120,10 @@ background-color: rgb(249, 255, 198);
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <property name="topMargin">
-       <number>0</number>
+       <number>20</number>
       </property>
       <property name="bottomMargin">
-       <number>0</number>
+       <number>20</number>
       </property>
       <item>
        <spacer name="horizontalSpacer_6">
@@ -139,7 +139,7 @@ background-color: rgb(249, 255, 198);
        </spacer>
       </item>
       <item>
-       <widget class="QWidget" name="" native="true">
+       <widget class="QWidget" name="verticalWidget" native="true">
         <property name="styleSheet">
          <string notr="true">QWidget{
 color:rgb(0, 0, 127);
@@ -172,11 +172,14 @@ color:rgb(0, 0, 107);
          <property name="topMargin">
           <number>1</number>
          </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
          <property name="bottomMargin">
           <number>1</number>
          </property>
          <item>
-          <spacer name="verticalSpacer_5">
+          <spacer name="verticalSpacer_4">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
@@ -207,18 +210,15 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <widget class="QLineEdit" name="search">
+            <widget class="QLineEdit" name="bookn">
              <property name="minimumSize">
               <size>
                <width>300</width>
                <height>20</height>
               </size>
              </property>
-             <property name="statusTip">
-              <string>enter a letter</string>
-             </property>
              <property name="placeholderText">
-              <string>Enter a category</string>
+              <string>Book's name</string>
              </property>
             </widget>
            </item>
@@ -238,7 +238,7 @@ color:rgb(0, 0, 107);
           </layout>
          </item>
          <item>
-          <spacer name="verticalSpacer_4">
+          <spacer name="verticalSpacer_3">
            <property name="orientation">
             <enum>Qt::Vertical</enum>
            </property>
@@ -269,31 +269,22 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
            <item>
-            <widget class="QTableWidget" name="table">
+            <widget class="QPushButton" name="returnb">
              <property name="minimumSize">
               <size>
-               <width>300</width>
-               <height>0</height>
+               <width>150</width>
+               <height>30</height>
               </size>
              </property>
-             <property name="styleSheet">
-              <string notr="true">background-color:white</string>
+             <property name="cursor">
+              <cursorShape>PointingHandCursor</cursorShape>
              </property>
-             <column>
-              <property name="text">
-               <string>Name</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Author</string>
-              </property>
-             </column>
-             <column>
-              <property name="text">
-               <string>Publisher</string>
-              </property>
-             </column>
+             <property name="toolTip">
+              <string>return</string>
+             </property>
+             <property name="text">
+              <string>Return</string>
+             </property>
             </widget>
            </item>
            <item>
@@ -310,6 +301,19 @@ color:rgb(0, 0, 107);
             </spacer>
            </item>
           </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </widget>
@@ -330,7 +334,7 @@ color:rgb(0, 0, 107);
      </layout>
     </item>
     <item>
-     <spacer name="verticalSpacer_2">
+     <spacer name="verticalSpacer">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>
@@ -352,32 +356,32 @@ color:rgb(0, 0, 107);
   <connection>
    <sender>pushButton</sender>
    <signal>clicked()</signal>
-   <receiver>showall</receiver>
+   <receiver>returnbook</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>494</x>
-     <y>28</y>
+     <x>486</x>
+     <y>30</y>
     </hint>
     <hint type="destinationlabel">
      <x>494</x>
-     <y>44</y>
+     <y>53</y>
     </hint>
    </hints>
   </connection>
   <connection>
    <sender>pushButton_2</sender>
    <signal>clicked()</signal>
-   <receiver>showall</receiver>
+   <receiver>returnbook</receiver>
    <slot>showMinimized()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>457</x>
-     <y>19</y>
+     <x>442</x>
+     <y>25</y>
     </hint>
     <hint type="destinationlabel">
-     <x>412</x>
-     <y>24</y>
+     <x>443</x>
+     <y>40</y>
     </hint>
    </hints>
   </connection>

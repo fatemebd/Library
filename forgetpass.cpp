@@ -11,6 +11,7 @@ forgetpass::forgetpass(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::forgetpass)
 {
+    setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
     ui->setupUi(this);
 }
 
@@ -45,7 +46,7 @@ void forgetpass::on_change_clicked()
     QString strpass=this->ui->newpass->text();
     QString strpassc=this->ui->newpassconf->text();
 
-    QFile file("C:/Users/DANESH/Desktop/ap/1/files/usersinfo.txt");
+    QFile file("usersinfo.txt");
      QTextStream a(&file);
       file.open(QFile::Text|QFile::ReadOnly);
      while(!a.atEnd())
