@@ -50,18 +50,11 @@ void rent::on_rentbook_clicked()
                 QFile file1("rentedbooks.txt");
                  QTextStream b(&file1);
                  int s=0;
-                /*  file1.open(QFile::Text|QFile::ReadWrite);
-                  if(b.atEnd()==true){
-                      //QTextStream p(&file1);
-                      b<<QString::number(0);
-                  }
-                  file.close();*/
                   file1.open(QFile::Text|QFile::ReadOnly);
 
                   while(!b.atEnd())
                   {
                        s=b.readLine().toInt();
-                  //qDebug()<<e;
                   }
                   file1.close();
                   s++;
@@ -70,7 +63,6 @@ void rent::on_rentbook_clicked()
                   q<<QString::number(s);
                   file1.close();
                 A[i].rent=username;
-                //qDebug()<<A[i].rent;
                 QMessageBox::information(this,"","Book rented succesfully!");
             }
         }
